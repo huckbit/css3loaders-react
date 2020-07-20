@@ -1,8 +1,8 @@
 // Import Global Variables
-@import './sass/variables.scss';
+@import "./sass/variables.scss";
 
 // Import all from Bulma
-@import '../node_modules/bulma/bulma.sass';
+@import "../node_modules/bulma/bulma.sass";
 
 // Import only what you need from Bulma
 // @import '../node_modules/bulma/sass/utilities/_all.sass';
@@ -15,6 +15,6 @@
 // @import '../node_modules/bulma/sass/layout/hero.sass';
 // @import '../node_modules/bulma/sass/layout/section.sass';
 
-
 // Import theme partials files
-@import './sass/theme/common';
+@import "./sass/theme/common";
+@import "./sass/theme/loaders";

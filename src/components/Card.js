@@ -6,7 +6,7 @@ class Card extends React.Component {
     let html = this.props.spinnerMarkup;
 
     return (
-      <div className="card">
+      <div className="card has-text-centered">
         <div className="card-image"></div>
         <div className="card-content">
           <div className="media">
@@ -14,9 +14,9 @@ class Card extends React.Component {
               <p className="title is-4">{this.props.title}</p>
             </div>
           </div>
-          <div className="content">
-            {ReactHtmlParser(html)}
-            <a className="button is-link" href="/">
+          <div className="loader-content">
+            <div className="loader-preview">{ReactHtmlParser(html)}</div>
+            <a className="button is-link mt-4" href="/">
               Source
             </a>
           </div>

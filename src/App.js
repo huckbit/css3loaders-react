@@ -10,9 +10,7 @@ class App extends React.Component {
     ));
     return (
       <div className="container">
-        <div className="columns">
-          <div className="column">{loadersComponents}</div>
-        </div>
+        <div className="cards-grid">{loadersComponents}</div>
       </div>
     );
   }

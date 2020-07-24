@@ -1,0 +1,16 @@
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+  row-gap: 15px;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.loader-content {
+  display: grid;
+}
+.loader-preview {
+  justify-self: center;
+}

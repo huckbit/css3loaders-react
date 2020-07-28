@@ -7,7 +7,7 @@ import Card from "../Card";
 class App extends React.Component {
   render() {
     const loadersComponents = loadersData.map((loader) => (
-      <Card key={loader.id} title={loader.name} spinnerMarkup={loader.markup} />
+      <Card key={loader.id} id={loader.id} title={loader.name} spinnerMarkup={loader.markup} />
     ));
     return (
       <DefaultLayout>

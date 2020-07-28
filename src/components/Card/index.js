@@ -1,5 +1,6 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
+import { Link } from "react-router-dom";
 
 class Card extends React.Component {
   render() {
@@ -16,9 +17,9 @@ class Card extends React.Component {
           </div>
           <div className="loader-content">
             <div className="loader-preview">{ReactHtmlParser(html)}</div>
-            <a className="button is-link mt-4" href="/">
+            <Link to={{ pathname: `loader/${this.props.id}` }} className="button is-link mt-4">
               Source
-            </a>
+            </Link>
           </div>
         </div>
       </div>

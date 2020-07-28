@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.scss";
-import loadersData from "./data/loaders";
-import Card from "./components/Card";
+import DefaultLayout from "../../layouts/default";
+import loadersData from "../../data/loaders";
+import Card from "../Card";
 
 class App extends React.Component {
   render() {
@@ -9,9 +10,11 @@ class App extends React.Component {
       <Card key={loader.id} title={loader.name} spinnerMarkup={loader.markup} />
     ));
     return (
-      <div className="container">
-        <div className="cards-grid">{loadersComponents}</div>
-      </div>
+      <DefaultLayout>
+        <div className="container mt-5">
+          <div className="cards-grid">{loadersComponents}</div>
+        </div>
+      </DefaultLayout>
     );
   }
 }

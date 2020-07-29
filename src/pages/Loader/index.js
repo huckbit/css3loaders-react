@@ -5,7 +5,7 @@ export default class Loader extends Component {
   render() {
     // const loader = loadersData[this.props.match.params.id - 1];
     const id = this.props.match.params.id;
-    const loaderItem = loadersData.filter((element) => element.id == id);
+    const loaderItem = loadersData.filter((element) => parseInt(element.id) === id);
     const { name, markup, css } = loaderItem[0];
     return (
       <div>

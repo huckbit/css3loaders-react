@@ -3,6 +3,8 @@ import DefaultLayout from "../../layouts/default";
 import { Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
+
 import loadersData from "../../data/loaders";
 
 export default class Loader extends Component {
@@ -17,11 +19,9 @@ export default class Loader extends Component {
           <div className="columns">
             <div className="column">
               <h1 className="title is-1">
-                <span class="icon">
-                  <Link to="/">
-                    <FontAwesomeIcon icon="fa-long-arrow-alt-left" />
-                  </Link>
-                </span>
+                <Link to="/">
+                  <FontAwesomeIcon icon={faArrowAltCircleLeft} />
+                </Link>
                 {name}
               </h1>
             </div>

@@ -9,10 +9,9 @@ import loadersData from "../../data/loaders";
 
 export default class Loader extends Component {
   render() {
-    // const loader = loadersData[this.props.match.params.id - 1];
     const id = this.props.match.params.id;
-    const previous = id - 1;
-    const next = id + 1;
+    const previous = id >= 1 ? parseInt(id) - 1 : false;
+    const next = id < loadersData.length ? parseInt(id) + 1 : false;
     const loaderItem = loadersData.filter((element) => element.id.toString() === id);
     const { name, markup, css } = loaderItem[0];
     return (
@@ -20,17 +19,21 @@ export default class Loader extends Component {
         <div className="section">
           <div className="columns">
             <div className="column is-2">
-              <Link className="title is-2" to={{ pathname: `/loader/${previous}` }}>
-                <FontAwesomeIcon icon={faCaretLeft} />
-              </Link>
+              {previous && (
+                <Link className="title is-2" to={{ pathname: `/loader/${previous}` }}>
+                  <FontAwesomeIcon icon={faCaretLeft} />
+                </Link>
+              )}
             </div>
             <div className="column">
               <h1 className="title is-1">{name}</h1>
             </div>
             <div className="column is-2">
-              <Link className="title is-2" to={{ pathname: `/loader/${next}` }}>
-                <FontAwesomeIcon icon={faCaretRight} />
-              </Link>
+              {next && (
+                <Link className="title is-2" to={{ pathname: `/loader/${next}` }}>
+                  <FontAwesomeIcon icon={faCaretRight} />
+                </Link>
+              )}
             </div>
           </div>
           <div className="columns">

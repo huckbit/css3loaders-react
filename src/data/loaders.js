@@ -39,6 +39,41 @@ export default [
   },
   {
     id: 2,
+    name: "pacm",
+    markup: `<div class="pacm"></div>`,
+    css: `.pacm {
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: transparent; }
+  .pacm:after, .pacm:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 35px solid #FFCC00; }
+  .pacm:before {
+    border-bottom-color: transparent;
+    animation: chunk-top .6s ease infinite; }
+  .pacm:after {
+    border-right-color: transparent;
+    animation: chunk-bottom .6s ease infinite; }
+
+@keyframes chunk-top {
+  0%, 100% {
+    transform: rotate(-45deg); }
+  50% {
+    transform: rotate(-80deg); } }
+@keyframes chunk-bottom {
+  0%, 100% {
+    transform: rotate(-45deg); }
+  50% {
+    transform: rotate(0deg); } }`,
+  },
+  {
+    id: 3,
     name: "Square Wheel",
     markup: `<div class="square-wheel"></div>`,
     css: `.square-wheel {
@@ -69,7 +104,7 @@ export default [
     }`,
   },
   {
-    id: 3,
+    id: 4,
     name: "Twins",
     markup: `<div class="twins"></div>`,
     css: `.twins {
@@ -128,7 +163,7 @@ export default [
     }`,
   },
   {
-    id: 4,
+    id: 5,
     name: "Look",
     markup: `<div class="look"></div>`,
     css: `.look {
@@ -180,7 +215,7 @@ export default [
 }`,
   },
   {
-    id: 5,
+    id: 6,
     name: "Nuclear",
     markup: `<div class="nuclear"></div>`,
     css: `.nuclear {

@@ -30,7 +30,9 @@ export default class Navbar extends Component {
           </div>
         </div>
         <div className={`navbar-menu ${this.state.activeMenu ? "is-active" : ""}`}>
-          <div className="navbar-start">
+          <div className="navbar-start"></div>
+
+          <div className="navbar-end">
             <NavLink to="#" className="navbar-item">
               Documentation
             </NavLink>
@@ -44,22 +46,6 @@ export default class Navbar extends Component {
             >
               About
             </NavLink>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">More</div>
-              <div className="navbar-dropdown">
-                <NavLink to="/contact" className="navbar-item">
-                  Contact
-                </NavLink>
-                <hr className="navbar-divider" />
-                <NavLink to="Issues" className="navbar-item">
-                  Report an issue
-                </NavLink>
-              </div>
-            </div>
-          </div>
-
-          <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
                 <Link to="https://github.com/huckbit" className="button is-primary">

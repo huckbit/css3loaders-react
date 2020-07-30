@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import DefaultLayout from "../../layouts/default";
-import { Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import LoaderNav from "./LoaderNav";
 
 import loadersData from "../../data/loaders";
 
@@ -17,21 +15,7 @@ export default class Loader extends Component {
     return (
       <DefaultLayout>
         <div className="section">
-          <div className="columns is-mobile">
-            <div className="column is-2">
-              <Link className="title is-2" to={{ pathname: `/loader/${previous}` }}>
-                <FontAwesomeIcon icon={faCaretLeft} />
-              </Link>
-            </div>
-            <div className="column has-text-centered">
-              <h1 className="title is-1">{name}</h1>
-            </div>
-            <div className="column is-2 has-text-right">
-              <Link className="title is-1 is-mobile-2" to={{ pathname: `/loader/${next}` }}>
-                <FontAwesomeIcon icon={faCaretRight} />
-              </Link>
-            </div>
-          </div>
+          <LoaderNav previous={previous} next={next} name={name} />
           <div className="columns">
             <div className="column is-5">
               <div className="message">

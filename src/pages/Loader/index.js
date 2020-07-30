@@ -10,7 +10,7 @@ import loadersData from "../../data/loaders";
 export default class Loader extends Component {
   render() {
     const id = this.props.match.params.id;
-    const previous = id >= 1 ? parseInt(id) - 1 : false;
+    const previous = id > 1 ? parseInt(id) - 1 : false;
     const next = id < loadersData.length ? parseInt(id) + 1 : false;
     const loaderItem = loadersData.filter((element) => element.id.toString() === id);
     const { name, markup, css } = loaderItem[0];

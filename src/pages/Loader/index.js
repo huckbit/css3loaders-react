@@ -3,7 +3,7 @@ import DefaultLayout from "../../layouts/default";
 import { Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 import loadersData from "../../data/loaders";
 import loaders from "../../data/loaders";

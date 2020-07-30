@@ -74,7 +74,7 @@ export default [
   },
   {
     id: 3,
-    name: "Square Wheel",
+    name: "square wheel",
     markup: `<div class="square-wheel"></div>`,
     css: `.square-wheel {
     position: relative;
@@ -105,7 +105,7 @@ export default [
   },
   {
     id: 4,
-    name: "Twins",
+    name: "twins",
     markup: `<div class="twins"></div>`,
     css: `.twins {
     background: #CDAEDA;
@@ -164,7 +164,7 @@ export default [
   },
   {
     id: 5,
-    name: "Look",
+    name: "look",
     markup: `<div class="look"></div>`,
     css: `.look {
     position: relative;
@@ -216,7 +216,7 @@ export default [
   },
   {
     id: 6,
-    name: "Nuclear",
+    name: "nuclear",
     markup: `<div class="nuclear"></div>`,
     css: `.nuclear {
     position: relative;

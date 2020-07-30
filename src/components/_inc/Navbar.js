@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 export default class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeMenu: false };
-  }
+  state = { activeMenu: false };
   toggleMenu = () => {
     this.setState({ activeMenu: !this.state.activeMenu });
   };
@@ -14,7 +11,7 @@ export default class Navbar extends Component {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="logo" />
+            <img src="/images/css3loaders-logo.png" width="112" height="28" alt="logo" />
           </Link>
 
           <div

@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 import loadersData from "../../data/loaders";
-import loaders from "../../data/loaders";
 
 export default class Loader extends Component {
   render() {

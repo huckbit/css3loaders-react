@@ -19,11 +19,9 @@ export default class Loader extends Component {
         <div className="section">
           <div className="columns is-mobile">
             <div className="column is-2">
-              {previous && (
-                <Link className="title is-2" to={{ pathname: `/loader/${previous}` }}>
-                  <FontAwesomeIcon icon={faCaretLeft} />
-                </Link>
-              )}
+              <Link className="title is-2" to={{ pathname: `/loader/${previous}` }}>
+                <FontAwesomeIcon icon={faCaretLeft} />
+              </Link>
             </div>
             <div className="column has-text-centered">
               <h1 className="title is-1">{name}</h1>

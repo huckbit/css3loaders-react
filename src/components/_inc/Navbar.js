@@ -7,9 +7,7 @@ export default class Navbar extends Component {
     this.state = { activeMenu: false };
   }
   toggleMenu = () => {
-    console.log("click");
     this.setState({ activeMenu: !this.state.activeMenu });
-    console.log(this.state);
   };
   render() {
     return (

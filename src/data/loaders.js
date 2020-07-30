@@ -37,61 +37,8 @@ export default [
             transform: rotate(360deg); } 
     }`,
   },
-  //   {
-  //     id: 2,
-  //     name: "Mitosys",
-  //     markup: `<div class="mitosys">
-  //                 <span class="box box-left"></span>
-  //                 <span class="box box-right"></span>
-  //             </div>
-  //                     `,
-  //     css: `.blur {
-  //             margin: 0 auto;
-  //             display: block;
-  //             width: 300px;
-  //             height: 150px;
-  //             position: relative;
-  //             background: #fff;
-  //             filter: blur(10px) contrast(40);
-  //         }
-  //         .box {
-  //             display: block;
-  //             height: 70px;
-  //             width: 70px;
-  //             position: relative;
-  //             border-radius: 50%;
-  //             left: 0%;
-  //             background-color: #000;
-  //         }
-  //         .box-left {
-  //             left: 40%;
-  //             top: 25%;
-  //             background-color: #000;
-  //             animation: go-r 3s ease-out infinite;
-  //         }
-  //         .box-right {
-  //             left: 15%;
-  //             top: -22%;
-  //             animation: go-l 4s ease-out infinite;
-  //         }
-  //         @keyframes go-r {
-  //             0%, 100% {
-  //                 left: 20%;
-  //                 transform: scale(1.2); }
-  //             50% {
-  //                 left: 50%;
-  //                 transform: scale(0.5); }
-  //             }
-  //         @keyframes go-l {
-  //             0%, 100% {
-  //                 left: 50%; }
-  //             50% {
-  //                 left: 20%;
-  //                 transform: scale(0.8); }
-  //         }`,
-  //   },
   {
-    id: 3,
+    id: 2,
     name: "Square Wheel",
     markup: `<div class="square-wheel"></div>`,
     css: `.square-wheel {
@@ -122,7 +69,7 @@ export default [
     }`,
   },
   {
-    id: 4,
+    id: 3,
     name: "Twins",
     markup: `<div class="twins"></div>`,
     css: `.twins {
@@ -181,7 +128,7 @@ export default [
     }`,
   },
   {
-    id: 5,
+    id: 4,
     name: "Look",
     markup: `<div class="look"></div>`,
     css: `.look {
@@ -233,7 +180,7 @@ export default [
 }`,
   },
   {
-    id: 6,
+    id: 5,
     name: "Nuclear",
     markup: `<div class="nuclear"></div>`,
     css: `.nuclear {

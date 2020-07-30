@@ -3,7 +3,7 @@ import DefaultLayout from "../../layouts/default";
 import { Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 import loadersData from "../../data/loaders";
 
@@ -11,19 +11,26 @@ export default class Loader extends Component {
   render() {
     // const loader = loadersData[this.props.match.params.id - 1];
     const id = this.props.match.params.id;
+    const previous = id - 1;
+    const next = id + 1;
     const loaderItem = loadersData.filter((element) => element.id.toString() === id);
     const { name, markup, css } = loaderItem[0];
     return (
       <DefaultLayout>
         <div className="section">
           <div className="columns">
+            <div className="column is-2">
+              <Link className="title is-2" to={{ pathname: `/loader/${previous}` }}>
+                <FontAwesomeIcon icon={faCaretLeft} />
+              </Link>
+            </div>
             <div className="column">
-              <h1 className="title is-1">
-                <Link to="/">
-                  <FontAwesomeIcon icon={faArrowLeft} />
-                </Link>
-                {name}
-              </h1>
+              <h1 className="title is-1">{name}</h1>
+            </div>
+            <div className="column is-2">
+              <Link className="title is-2" to={{ pathname: `/loader/${next}` }}>
+                <FontAwesomeIcon icon={faCaretRight} />
+              </Link>
             </div>
           </div>
           <div className="columns">

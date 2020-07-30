@@ -3,9 +3,11 @@ import { NavLink, Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   state = { activeMenu: false };
+
   toggleMenu = () => {
     this.setState({ activeMenu: !this.state.activeMenu });
   };
+
   render() {
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -14,6 +16,7 @@ export default class Navbar extends Component {
             <img src="/images/css3loaders-logo.png" width="112" height="28" alt="logo" />
           </Link>
 
+          {/* show the class to based on state to show animation on button */}
           <div
             role="button"
             className={`navbar-burger burger ${this.state.activeMenu ? "is-active" : ""}`}
@@ -26,6 +29,7 @@ export default class Navbar extends Component {
             <span aria-hidden="true"></span>
           </div>
         </div>
+        {/* show the class to based on state to show the dropdown */}
         <div className={`navbar-menu ${this.state.activeMenu ? "is-active" : ""}`}>
           <div className="navbar-start"></div>
 

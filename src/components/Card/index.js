@@ -17,7 +17,10 @@ class Card extends React.Component {
           </div>
           <div className="loader-content">
             <div className="loader-preview">{ReactHtmlParser(html)}</div>
-            <Link to={{ pathname: `loader/${this.props.id}` }} className="button is-link mt-4">
+            <Link
+              to={{ pathname: `loader/${this.props.id}` }}
+              className="button is-info my-4"
+            >
               Source
             </Link>
           </div>

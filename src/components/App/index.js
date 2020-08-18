@@ -7,12 +7,19 @@ import Card from "../Card";
 class App extends React.Component {
   render() {
     const loadersComponents = loadersData.map((loader) => (
-      <Card key={loader.id} id={loader.id} title={loader.name} spinnerMarkup={loader.markup} />
+      <Card
+        key={loader.id}
+        id={loader.id}
+        title={loader.name}
+        spinnerMarkup={loader.markup}
+      />
     ));
     return (
       <DefaultLayout>
-        <div className="container mt-5">
-          <div className="cards-grid">{loadersComponents}</div>
+        <div className="section mt-5">
+          <div className="container">
+            <div className="cards-grid">{loadersComponents}</div>
+          </div>
         </div>
       </DefaultLayout>
     );

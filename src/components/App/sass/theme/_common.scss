@@ -1,3 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrap-content {
+  flex: 1; /*this is the property flex-grow that makes the div flexible*/
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  padding: 2rem 1.5rem 2rem !important;
+  background-color: red;
+}
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

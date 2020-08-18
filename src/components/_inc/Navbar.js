@@ -59,14 +59,14 @@ export default class Navbar extends Component {
                   to="https://www.instagram.com/css3loaders/"
                   className="button is-light is-small"
                 >
-                  <i class="fab fa-instagram mr-2"></i>{" "}
+                  <i className="fab fa-instagram mr-2"></i>{" "}
                   <span>Follow me on instagram</span>
                 </Link>
                 <Link
                   to="https://twitter.com/css3loaders"
                   className="button is-info is-small"
                 >
-                  <i class="fab fa-twitter mr-2"></i>Follow me on twitter
+                  <i className="fab fa-twitter mr-2"></i>Follow me on twitter
                 </Link>
               </div>
             </div>

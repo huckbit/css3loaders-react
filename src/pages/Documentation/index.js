@@ -4,7 +4,11 @@ import DefaultLayout from "../../layouts/default";
 export default () => {
   return (
     <DefaultLayout>
-      <h1>Docs</h1>
+      <div className="section">
+        <div className="container">
+          <h1>Docs</h1>
+        </div>
+      </div>
     </DefaultLayout>
   );
 };

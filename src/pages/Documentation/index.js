@@ -81,11 +81,11 @@ export default () => {
                 <pre className="my-3">{pokemCss}</pre>
                 and paste it in your css file and save it.
               </p>
-              <p>Cool! <span className="is-size-3">🙌</span> Now the spinner should be visible on your page!</p>
+              <p>Cool! <span className="is-size-3" role="img" aria-label="hand"> 🙌</span> Now the spinner should be visible on your page!</p>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </DefaultLayout>
   );
 };

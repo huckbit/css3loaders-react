@@ -46,8 +46,7 @@ export default class Navbar extends Component {
             <NavLink
               to="/docs"
               activeStyle={{
-                fontWeight: "bold",
-                borderBottom: "4px solid #3298dc",
+                borderBottom: "2px solid #3298dc",
               }}
               className="navbar-item"
             >
@@ -55,19 +54,23 @@ export default class Navbar extends Component {
             </NavLink>
             <div className="navbar-item">
               <div className="buttons">
-                <Link
-                  to="https://www.instagram.com/css3loaders/"
+                <a
+                  href="https://www.instagram.com/css3loaders/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="button is-light is-small"
                 >
                   <i className="fab fa-instagram mr-2"></i>{" "}
                   <span>Follow me on instagram</span>
-                </Link>
-                <Link
-                  to="https://twitter.com/css3loaders"
+                </a>
+                <a
+                  href="https://twitter.com/css3loaders"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="button is-info is-small"
                 >
                   <i className="fab fa-twitter mr-2"></i>Follow me on twitter
-                </Link>
+                </a>
               </div>
             </div>
           </div>

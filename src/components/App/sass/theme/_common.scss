@@ -21,7 +21,6 @@ footer {
   padding: 2rem 1.5rem 2rem !important;
   background-color: red;
 }
-
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -34,6 +33,7 @@ footer {
 .loader-content {
   display: grid;
 }
+
 .loader-preview {
   justify-self: center;
   min-height: 10vh;

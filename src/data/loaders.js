@@ -246,6 +246,8 @@ export default [
   {
     id: 6,
     name: "nuclear",
+    cdn: "https://gitcdn.xyz/repo/huckbit/css3-loaders-lib/master/dist/css/nuclear/nuclear.css",
+    cdnMin: "https://gitcdn.xyz/repo/huckbit/css3-loaders-lib/master/dist/css/nuclear/nuclear.min.css",
     markup: `<div class="nuclear"></div>`,
     css: `.nuclear {
     position: relative;

@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-export default class Navbar extends Component {
-  state = { activeMenu: false };
+export default () => {
+  const [activeMenu, setActiveMenu] = useState(false);
 
-  toggleMenu = () => {
-    this.setState({ activeMenu: !this.state.activeMenu });
+  const toggleMenu = () => {
+    setActiveMenu(!activeMenu);
   };
 
-  render() {
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
@@ -25,11 +24,11 @@ export default class Navbar extends Component {
           <div
             role="button"
             className={`navbar-burger burger ${
-              this.state.activeMenu ? "is-active" : ""
+              activeMenu ? "is-active" : ""
             }`}
             aria-label="menu"
             aria-expanded="false"
-            onClick={this.toggleMenu}
+            onClick={toggleMenu}
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -38,7 +37,7 @@ export default class Navbar extends Component {
         </div>
         {/* show the class to based on state to show the dropdown */}
         <div
-          className={`navbar-menu ${this.state.activeMenu ? "is-active" : ""}`}
+          className={`navbar-menu ${activeMenu ? "is-active" : ""}`}
         >
           <div className="navbar-start"></div>
 
@@ -78,4 +77,3 @@ export default class Navbar extends Component {
       </nav>
     );
   }
-}

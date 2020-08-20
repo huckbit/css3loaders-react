@@ -4,8 +4,7 @@ import DefaultLayout from "../../layouts/default";
 import loadersData from "../../data/loaders";
 import Card from "../Card";
 
-class App extends React.Component {
-  render() {
+export default () => {
     const loadersComponents = loadersData.map((loader) => (
       <Card
         key={loader.id}
@@ -13,7 +12,7 @@ class App extends React.Component {
         title={loader.name}
         spinnerMarkup={loader.markup}
       />
-    ));
+    ))
     return (
       <DefaultLayout>
         <div className="section mt-5">
@@ -24,6 +23,3 @@ class App extends React.Component {
       </DefaultLayout>
     );
   }
-}
-
-export default App;

@@ -70,17 +70,17 @@ export default () => {
                 <span className="pokem"></span>
                 </span>
               </p>
-              <p className="pb-4">
+              <span className="pb-4">
                 Go the <Link to="loader/1">pokem code page</Link>, select all
                 the code inside the section <b>markup</b>:
                 <pre className="my-3">{pokemHtml}</pre>
                 paste it in your html file.
-              </p>
-              <p className="pb-4">
+              </span>
+              <span className="pb-4">
                 After that select the code inside the section <b>css</b>:
                 <pre className="my-3">{pokemCss}</pre>
                 and paste it in your css file and save it.
-              </p>
+              </span>
               <p>Cool! <span className="is-size-3" role="img" aria-label="hand"> 🙌</span> Now the spinner should be visible on your page!</p>
             </div>
           </div>

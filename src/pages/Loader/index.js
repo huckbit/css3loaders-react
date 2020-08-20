@@ -1,19 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import DefaultLayout from "../../layouts/default";
 import ReactHtmlParser from "react-html-parser";
 import LoaderNav from "./LoaderNav";
 
 import loadersData from "../../data/loaders";
 
-export default class Loader extends Component {
-  render() {
-    const id = this.props.match.params.id;
+export default (props) => {
+    const id = props.match.params.id;
     const previous = id > 1 ? parseInt(id) - 1 : loadersData.length;
     const next = id < loadersData.length ? parseInt(id) + 1 : 1;
     const loaderItem = loadersData.filter(
       (element) => element.id.toString() === id
     );
     const { name, markup, css } = loaderItem[0];
+    
     return (
       <DefaultLayout>
         <div className="section">
@@ -54,4 +54,3 @@ export default class Loader extends Component {
       </DefaultLayout>
     );
   }
-}
